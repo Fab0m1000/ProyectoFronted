@@ -1,0 +1,79 @@
+:root{
+  --succes-color: #2ecc71;;
+  --error-color: #e74c3c;
+}
+
+.form-container{
+  background-color: #fff;
+  border-radius:5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  max-width: 350px;
+  margin: 10px auto;
+}
+
+.my-form{
+  padding: 35px 40px;
+}
+
+.form-control{
+  margin-bottom: 13px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label{
+  color:#777;
+  display: block;
+  margin-bottom: 2px; 
+  font-family: var(--lato-font-text);
+  font-weight:400;
+}
+
+.form-control input[type="text"],[type="password"]{
+  border: 2px solid #606C5D;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px; 
+  margin-bottom:8px;  
+}
+
+.form-control input:focus{
+  outline: 0;
+  border-color: #777;
+
+}
+/* small color */
+.form-control.success input {
+  border-color: var(--succes-color);
+}
+.form-control.error input {
+  border-color: var(--error-color);    
+}
+
+.form-control small{
+  color: var(--error-color);
+  position: absolute;
+  bottom: -2%;
+  left: 0;
+  /* vuelve invisible un elemento */
+  visibility: hidden; 
+  font-family: var(--lato-font-text);
+  font-weight:300px;
+}
+
+.form-control.error small{
+  visibility: visible;
+}
+
+.btn-submit{
+  width: 100%;
+  margin-top:20px;
+  padding: .4em .5em;
+  display:block;
+  border-radius:4px;
+  font-size:1.1rem;
+  background-color: var(--color-blueDark);
+  color: #fff;
+}

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="assets/styles/home.css" />
+    <link rel="stylesheet" href="assets/styles/utils/logo-header.css" />
+    <link rel="stylesheet" href="assets/styles/utils/hover-effects.css" />
+    <link rel="stylesheet" href="assets/styles/modal.css" />
+    <link rel="stylesheet" href="assets/styles/modal-form.css" />
+    <link rel="stylesheet" href="assets/styles/gallery.css">
+    <link rel="stylesheet" href="assets/styles/swiper_slide.css">
+    <link rel="stylesheet" href="assets/styles/mobile/home_mobile.css">
+    
+    <!---->
+    <!-- external libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/78ced824c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--  -->
+    <!-- fancybox -->
+    <link rel="stylesheet" href="libreria_fancybox/jquery.fancybox.css">
+    <!--  -->
+    <!-- swipper js -->
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css" />
+    <!---->
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--  -->
+    <!-- animate wow -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--  -->
+
+    <!-- slidejs -->
+
+    <!--  -->
+    <title>Recruiment Agency</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container main-container">
+        <div class="logo-container">
+          <a href="">
+            <img
+              src="assets/ilustrations/logo_header.svg"
+              alt=""
+              class="logo-header"
+            />
+          </a>
+          <p class="logo-text">
+            <span class="bold-text">Recruiment</span> Agencies Directory
+          </p>
+          <div class="hamburguer-icon" id="hamburguerIcon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <nav class="underline-effect">
+          <ul>
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#slideContainer">Our team</a></li>
+            <li><a href="#cardSection">blog</a></li>
+            <li><a href="#testimonial">testimonial</a></li>
+            <li><a href="#help">help & Advice</a></li>
+            <li><a href="#gallery">gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner-hero">
+      <div class="banner-content-overlay main-container">
+        <h1 class="banner-title">
+          Everyone has a chance to apply his knowledge
+        </h1>
+        <p class="banner-subtitle">thanks for visiting our site</p>
+        <a href="#" class="btn-learn-more btn-openModal" id="btn-openModal">
+          Apply now!
+        </a>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal-box" id="modalBox">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Register With Us!</h2>
+          <span class="btn-closeModal" id="btn-closeModal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-left-column">
+            <!-- ilustration -->
+            <img
+              src="assets/ilustrations/team.svg"
+              alt="team"
+              class="team-ilustration"
+            />
+          </div>
+          <div class="modal-right-column">
+            <div class="form-container">
+              <form id="myForm" class="my-form">
+                <div class="form-control">
+                  <label for="txt-username">Username</label>
+                  <input
+                    type="text"
+                    id="txt-username"
+                    placeholder="Enter Username"
+                  />
+                  <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                  <label for="txt-email">Email</label>
+                  <input type="text" id="txt-email" placeholder="Enter email" />
+                  <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                  <label for="txt-password">Password</label>
+                  <input
+                    type="password"
+                    id="txt-password"
+                    placeholder="Enter password"
+                  />
+                  <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                  <label for="txt-password2">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="txt-password2"
+                    placeholder="Enter password again"
+                  />
+                  <small>Error Message</small>
+                </div>
+                <button class="btn-submit" id="btnSumbit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <!-- card section -->
+
+    <section class="card-section" id="cardSection">
+      <h1 class="main-container">Welcome our site!</h1>
+
+      <div class="card-container main-container animate__animated animate__fadeInLeftBig animate__delay-2s">
+        <div class="card card__item-1">
+          <div class="card-img">
+            <img src="assets/images/graphics.jpg" alt="" class="img-card" />
+          </div>
+          <div class="card-body">
+            <p class="card-title">
+              Ensuring the highest level of customers satisfaction
+            </p>
+            <p class="card-description">
+              Our company is your one-stop-solution for all needs. There is no
+              doubt that we are the leaders and you don't have to worry about
+              our image because it is perfect.
+            </p>
+          </div>
+        </div>
+        <div class="card card__item-1">
+          <div class="card-img">
+            <img src="assets/images/secretary.jpg" alt="" class="img-card" />
+          </div>
+          <div class="card-body">
+            <p class="card-title">
+              Developing your opportunities within your business sector
+            </p>
+            <p class="card-description">
+              Thank you for visiting our site! You are at the right place! We
+              are focused on providing integrated solutions and services to
+              customers around the world.
+            </p>
+          </div>
+        </div>
+        <div class="card card__item-1">
+          <div class="card-img">
+            <img src="assets/images/blog.jpg" alt="" class="img-card" />
+          </div>
+          <div class="card-body">
+            <p class="card-title">
+              Develop your soft skills
+            </p>
+            <p class="card-description">
+              Thank you for visiting our site! You are at the right place! We
+              are focused on providing integrated solutions and services to
+              customers around the world.
+            </p>
+          </div>
+        </div>
+        <div class="card card__item-1">
+          <div class="card-img">
+            <img src="assets/images/blog.jpg" alt="" class="img-card" />
+          </div>
+          <div class="card-body">
+            <p class="card-title">
+              Create a good CV
+            </p>
+            <p class="card-description">
+              Thank you for visiting our site! You are at the right place! We
+              are focused on providing integrated solutions and services to
+              customers around the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="help" id="help">
+      <div class="question-container">
+        <h1 class="main-container">How can our agency help you?</h1>
+      </div>
+
+      <div class="help-container">
+        <div class="help-content first">
+          <div class="img-big-container">
+            <figure>
+              <img
+                src="assets/images/meeting.jpg"
+                alt="meeting"
+                class="meeting-img"
+              />
+            </figure>
+          </div>
+          <div class="wow text-content animate__animated animate__fadeIn animate__delay-3s">
+            <div class="text-content-container">
+              <h2 class="content-title">For employers</h2>
+              <p class="description-content">
+                Recruitment Agencies advertise their jobs on CV-Library. Enter
+                your search criteria, including keywords and location, and all
+                relevant jobs will be displayed for you to apply directly to.
+              </p>
+              <ul class="benefits-links">
+                <li>
+                  Use Our Advanced Search Tools to locate your most suitable
+                  recruiter
+                </li>
+                <li>
+                  Register with Agency Seeker and forward all your Job Vacancies
+                  to recruiters
+                </li>
+                <li>
+                  Request immediate call backs for your recruitment needs or
+                  choose to contact recruiters directly
+                </li>
+              </ul>
+
+              <a href="#" class="btn-read-more">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="help-content second">
+          <div class="img-big-container">
+            <figure>
+              <img
+                src="assets/images/meeting2.jpg"
+                alt="meeting"
+                class="meeting-img"
+              />
+            </figure>
+          </div>
+          <div class="wow text-content animate__animated animate__fadeInRight animate__delay-3s">
+            <div class="text-content-container">
+              <h2 class="content-title">For jobseekers</h2>
+              <p class="description-content">
+                Searching for jobs, telephone interviews, in-person interviews,
+                waiting for a call that sometimes doesn't arrive can all add up
+                to stress that makes it hard to focus and find the job you want!
+              </p>
+              <ul class="benefits-links">
+                <li>
+                  Use Our Advanced Search Tools to locate your most suitable
+                  recruiter
+                </li>
+                <li>
+                  Register with Agency Seeker and forward your CV directly to
+                  recruiters
+                </li>
+                <li>
+                  Request immediate call backs to discuss your recruitment needs
+                </li>
+              </ul>
+
+              <a href="#" class="btn-read-more">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile -->
+      <section class="help-mobile">
+          <div class="first">
+              <figure>
+                  <img src="assets/images/meeting.jpg" alt="" class="meeting-img">
+              </figure>
+              <h3>For Employers</h3>
+
+              <div class="accordeon">
+                <h4 class="title1"></h4>
+                <div class="accordeon-content">
+                    <p class="item1">
+                      Use Our Advanced Search Tools to locate your most suitable
+                      recruiter
+                    </p>
+                </div>
+                <h4 class="title2"></h4>
+                <div class="accordeon-content">
+                  <p class="item2">
+                    Register with Agency Seeker and forward all your Job Vacancies
+                    to recruiters
+                  </p>
+                </div>
+                <h4 class="title3"></h4>
+                <div class="accordeon-content">
+                  <p class="item3">
+                    Request immediate call backs for your recruitment needs or
+                  choose to contact recruiters directly
+                  </p>
+                </div>
+              </div>
+          </div>
+          <div class="second">
+            <figure>
+              <img src="assets/images/meeting2.jpg" alt="" class="meeting-img">
+          </figure>
+          <h3>For jobseekers</h3>
+
+          <div class="accordeon">
+            <h4 class="title1"></h4>
+            <div class="accordeon-content">
+                <p class="item1">
+                  Use Our Advanced Search Tools to locate your most suitable
+                  recruiter
+                </p>
+            </div>
+            <h4 class="title2"></h4>
+            <div class="accordeon-content">
+              <p class="item2">
+                Register with Agency Seeker and forward all your Job Vacancies
+                to recruiters
+              </p>
+            </div>
+            <h4 class="title3"></h4>
+            <div class="accordeon-content">
+              <p class="item3">
+                Request immediate call backs for your recruitment needs or
+              choose to contact recruiters directly
+              </p>
+            </div>
+          </div>
+          </div>
+      </section>
+    </section>
+    <!-- gallery -->
+    <section class="gallery" id="gallery">
+      <div class="wow gallery-title main-container animate__animated animate__fadeInUp animate__delay-2s">
+        <h2>Some advantages of working with us</h2>
+        <p>let's have a look at some of the advantages of working with a recruitment agency</p>
+      </div>
+
+      <div class="gallery-container main-container">
+          <figure>
+            <a href="assets/images/tinified_2/pexels-rdne-stock-project-7581125.jpg" title="advantage_1" class="fancybox" rel="gallery1">
+              <img src="assets/images/tinified_2/pexels-rdne-stock-project-7581125.jpg" alt="" class="gallery_item">
+              <div class="overlay-text">
+                <p>Ability to identify talent</p>
+              </div>
+            </a>
+          </figure>
+          <figure>
+             <a href="assets/images/tinified_2/pexels-fauxels-3184339.jpg" title="advantage_2" class="fancybox" rel="gallery1">
+              <img src="assets/images/tinified_2/pexels-fauxels-3184339.jpg" alt="" class="gallery_item">
+              <div class="overlay-text">
+                <p>Announce roles</p>
+              </div>
+             </a>
+          </figure>
+          <figure>
+              <a href="assets/images/tinified_2/money.jpg" title="advantage_3" class="fancybox" rel="gallery1">
+                <img src="assets/images/tinified_2/money.jpg" alt="" class="gallery_item">
+              <div class="overlay-text">
+                <p>Negotiate salaries</p>
+              </div>
+              </a>
+          </figure>
+          <figure>
+              <a href="assets/images/tinified_2/pexels-fauxels-3184395.jpg" title="advantage_4" class="fancybox" rel="gallery1">
+                <img src="assets/images/tinified_2/pexels-fauxels-3184395.jpg" alt="" class="gallery_item">
+              <div class="overlay-text">
+                <p>Deliver interim professionals</p>
+              </div>
+              </a>
+          </figure>
+          <figure>
+             <a href="assets/images/tinified_2/pexels-fauxels-3184419.jpg" title="advantage_5" class="fancybox" rel="gallery1">
+              <img src="assets/images/tinified_2/pexels-fauxels-3184419.jpg" alt="" class="gallery_item">
+              <div class="overlay-text">
+                <p>Providing industry insight</p>
+              </div>
+             </a>
+          </figure>
+          <figure>
+              <a href="assets/images/tinified_2/meeting3.jpg" title="advantage_6" class="fancybox" rel="gallery1">
+                <img src="assets/images/tinified_2/meeting3.jpg" alt="" 
+              class="gallery_item">
+              <div class="overlay-text">
+                <p>Candidate interview</p>
+              </div>
+              </a>
+          </figure>
+      </div>
+    </section>
+
+    <section class="company">
+      <h1 class="main-container">Why our company?</h1>
+
+      <div class="company-container main-container">
+        <!-- card 1 -->
+        <div class="wow company-card animate__animated animate__zoomIn animate__delay-2s">
+          <div class="company-card-icon">
+            <i class="fa-sharp fa-solid fa-phone"></i>
+          </div>
+          <div class="company-card-body">
+            <h3 class="name">Our Commitment to You</h3>
+            <p class="details">
+              We use the Commitment Charter to ensure all clients are looked
+              after at every step of the way.
+            </p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="wow company-card animate__animated animate__zoomIn animate__delay-2s">
+          <div class="company-card-icon">
+            <i class="fa-sharp fa-solid fa-user-group"></i>
+          </div>
+          <div class="company-card-body">
+            <h3 class="name">Fully trained outreach HR team</h3>
+            <p class="details">
+              The department will be able to deal with any employment issues,
+              including breaches of contract.
+            </p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="wow company-card animate__animated animate__zoomIn animate__delay-2s">
+          <div class="company-card-icon">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="company-card-body">
+            <h3 class="name">Recruitment Consultants</h3>
+            <p class="details">
+              It's important that you trust the person who represents you at the
+              recruitment agency you choose.
+            </p>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="wow company-card animate__animated animate__zoomIn animate__delay-2s">
+          <div class="company-card-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div class="company-card-body">
+            <h3 class="name">We run FastPay Payments</h3>
+            <p class="details">
+              Our agency supports FastDay online payments that will hasten and
+              secure the payment process on our website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -->
+
+    <section class="testimonial" id="testimonial">
+      <h1 class="main-container">Testimonial</h1>
+      
+      <div class="wow testimonial-carrusel-container main-container animate__animated animate__slideInDown ">
+        <div class="card-testimonial">
+          <div class="quote-container"><!-- quote --></div>
+          <div class="card-testimonial-body">
+             <p>"I highly recommend agency as a professional and extremely competent consultant who helped me find the right position and identified the key criteria I was looking for in my next role."</p>
+             <h3>Kevin Howard</h3>
+             <div class="photo-container">
+              <!-- photo -->
+              <img src="assets/images/tinified/person1.jpg" alt="person1" class="person-photo">
+             </div>
+             <div class="card-testimonial-social-media">
+               <!-- icon -->
+               <i class="fa-brands fa-linkedin"></i>
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-twitter"></i>
+             </div>
+          </div>
+      </div>
+     
+      <div class="wow card-testimonial animate__animated animate__slideInDown ">
+        <div class="quote-container"><!-- quote --></div>
+        <div class="card-testimonial-body">
+           <p>"From my first meeting with the team I was most impressed with their level of professionalism and can-do attitude. They were both friendly and helpful and kept me fully informed throughout the whole process"</p>
+           <h3>Sarah Rodriguez</h3>
+           <div class="photo-container">
+            <!-- photo -->
+            <img src="assets/images/tinified/person2.jpg" alt="person1" class="person-photo">
+           </div>
+           <div class="card-testimonial-social-media">
+             <!-- icon -->
+             <i class="fa-brands fa-linkedin"></i>
+             <i class="fa-brands fa-facebook"></i>
+             <i class="fa-brands fa-twitter"></i>
+           </div>
+        </div>
+    </div>
+
+<div class="wow card-testimonial animate__animated animate__slideInDown ">
+    <div class="quote-container"><!-- quote --></div>
+    <div class="card-testimonial-body">
+       <p>"We have worked with RAD for over 10 years and they really know what candidates are a good fit for our company - both for our customers and internally. They are very friendly and always willing to help."</p>
+       <h3>Roberta Rivera</h3>
+       <div class="photo-container">
+        <!-- photo -->
+        <img src="assets/images/tinified/person4.jpg" alt="person1" class="person-photo">
+       </div>
+       <div class="card-testimonial-social-media">
+         <!-- icon -->
+         <i class="fa-brands fa-linkedin"></i>
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-twitter"></i>
+       </div>
+    </div>
+</div>
+
+<div class="wow card-testimonial animate__animated animate__slideInUp ">
+  <div class="quote-container"><!-- quote --></div>
+  <div class="card-testimonial-body">
+     <p>"We have worked with RAD on two critical assignments. The team set out to thoroughly understand the brief, were knowledgeable and extremely helpful throughout the process"</p>
+     <h3>James Price</h3>
+     <div class="photo-container">
+      <!-- photo -->
+      <img src="assets/images/tinified/person3.jpg" alt="person1" class="person-photo">
+     </div>
+     <div class="card-testimonial-social-media">
+       <!-- icon -->
+       <i class="fa-brands fa-linkedin"></i>
+       <i class="fa-brands fa-facebook"></i>
+       <i class="fa-brands fa-twitter"></i>
+     </div>
+  </div>
+</div>
+
+<div class="wow card-testimonial animate__animated animate__slideInUp ">
+<div class="quote-container"><!-- quote --></div>
+<div class="card-testimonial-body">
+   <p>"I highly recommend agency as a professional and extremely competent consultant who helped me find the right position and identified the key criteria I was looking for."</p>
+   <h3>Chris Smith</h3>
+   <div class="photo-container">
+    <!-- photo -->
+    <img src="assets/images/tinified/person5.jpg" alt="person1" class="person-photo">
+   </div>
+   <div class="card-testimonial-social-media">
+     <!-- icon -->
+     <i class="fa-brands fa-linkedin"></i>
+     <i class="fa-brands fa-facebook"></i>
+     <i class="fa-brands fa-twitter"></i>
+   </div>
+</div>
+      </div>
+<!-- slider -->
+    </section>
+    <section class="slide-container" id="slideContainer">
+      <h1 class="wow main-container animate__animated animate__fadeInLeft animate__delay-2s">Meet our team of experts</h1>
+      <div class="wow swiper mySwiper main-container animate__animated animate__fadeInUp animate__delay-3s">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/tinified_3/pexels-andrea-piacquadio-927022.jpg" alt="">
+            <div class="overlay-txt">
+              <p>
+                "La confianza en sí mismo es el primer secreto del éxito"
+              </p>
+              <span> -Steve Theorod</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/tinified_3/pexels-cowomen-2041627.jpg" alt="">
+            <div class="overlay-txt">
+              <p>"La única forma de hacer es un buen trabajo, es con un buen equipo"</p>
+              <span> -Veronica Jzibons </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/tinified_3/pexels-linkedin-sales-navigator-3867836.jpg" alt="">
+            <div class="overlay-txt">
+              <p>"Todo parece imposible hasta que se da el primer paso"</p>
+              <span> -Alicia Robertons </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/tinified_3/pexels-rfstudio-3810762.jpg" alt="">
+            <div class="overlay-txt">
+              <p>"No importa lo despacio que vayas, lo importante es no detenerse"</p>
+              <span> -Lucia Rodriguez</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/tinified_3/pexels-yan-krukau-7793641.jpg" alt="">
+            <div class="overlay-txt">
+              <p>"La actitud es una pequeña cosa que marca una gran diferencia en el equipo"</p>
+              <span> - Simon Nelson Cook</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/tinified_3/pexels-yan-krukau-7793670.jpg" alt="">
+            <div class="overlay-txt">
+              <p>"Da siempre lo mejor que tienes. Plantealo y da el siguiente paso"</p>
+              <span> - Simon Nelson Cook</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container main-container">
+        <div class="info-footer-container">
+          <nav class="menu-bar-footer">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Sector/Advisor</a></li>
+              <li><a href="#">Help&Advice</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="right-container">
+            Recruitment Agencies Directory ©2023 All rights reserved.
+            <br />
+            <br />
+            Terms of use | Privacy Policy
+          </div>
+          <div class="social-media-footer-container">
+            <!-- icons go here -->
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-slack"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="logo-footer">
+            <img src="assets/ilustrations/logo_header.svg" alt="" class="logo-header">
+          </div>
+        </div>
+        <div class="video-container">
+          <iframe
+            width="450"
+            height="250"
+            src="https://www.youtube.com/embed/OJNcYZvToGY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- footer mobile -->
+      <div class="mobile-footer">
+          <div class="footer-mobile-content">
+            <div class="right-container">
+              Recruitment Agencies Directory ©2023 All rights reserved.
+              <br />
+              <br />
+              Terms of use | Privacy Policy
+            </div>
+            <div class="social-media-footer-container">
+              <!-- icons go here -->
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-slack"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <iframe
+            width="250"
+            height="250"
+            src="https://www.youtube.com/embed/OJNcYZvToGY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          </div>
+      </div>
+    </footer>
+
+    <!-- back to top button -->
+    <a href="" class="btn-backToTop" id="btnBackToTop">
+      <!-- icon -->
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <script src="libreria_animate/wow.min.js"></script>
+    <script src="libreria_fancybox/jquery.fancybox.js"></script>
+    <script src="js_files/animate.js"></script>
+    <script src="js_files/accordeon.js"></script>
+    <script src="js_files/menu_desplegable.js"></script>
+    <script src="js_files/swiper-bundle.min.js"></script>
+    <script src="js_files/swiper-app.js"></script>
+    <script src="js_files/form_validation.js"></script>
+    <script src="js_files/modal.js"></script>
+    <script src="js_files/backtoTop.js"></script>
+  </body>
+</html>

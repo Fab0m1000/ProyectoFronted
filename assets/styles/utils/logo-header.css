@@ -1,0 +1,35 @@
+.logo-header{
+  width: 150px;
+  height: 130px;
+}
+
+.bold-text{
+  font-weight: 700;
+}
+
+.img-card{
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.meeting-img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.person-photo{
+  width: 80px;
+  height: 80px;
+  object-fit:cover;
+  border-radius: 50%;
+  position: absolute;
+  left: -3%;
+  margin: auto;
+}
+
+.team-ilustration{
+  width: 310px;
+  height: 340px;
+  margin-left:15px;
+}
